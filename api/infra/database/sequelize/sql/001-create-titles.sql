@@ -1,0 +1,11 @@
+CREATE SCHEMA msr;
+
+CREATE TABLE msr.titles (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR NOT NULL,
+  director VARCHAR NOT NULL,
+  year INT NOT NULL,
+  duration VARCHAR NOT NULL,
+  type VARCHAR NOT NULL,
+  img_url VARCHAR
+);

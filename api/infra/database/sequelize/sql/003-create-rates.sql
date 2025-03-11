@@ -1,0 +1,10 @@
+
+CREATE TABLE msr.Rates (
+  id SERIAL PRIMARY KEY,
+  title_id INT NOT NULL,
+  user_id INT NOT NULL,
+  value INT NOT NULL,
+  comment TEXT NOT NULL,
+  FOREIGN KEY (titles_id) REFERENCES Titles(id) ON DELETE CASCADE,
+  FOREIGN KEY (users_id) REFERENCES Users(id) ON DELETE CASCADE
+)
