@@ -1,9 +1,19 @@
 require("dotenv").config();
 
 const express = require("express");
+
+const syncDatabase = require('./database/syncDataase');
+
+const PORT = process.env.PORT || 3001;
+
+const routes = require('./routes/Routes');
+
 const app = express();
 
-const PORT = process.env.PORT || 300;
+app.use(express.json());
+app.use('', routes);
+
+syncDatabase();
 
 app.listen(PORT, () => {
   console.log(`API running on port: ${PORT}`);
