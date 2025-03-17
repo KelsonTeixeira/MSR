@@ -19,10 +19,10 @@ const User = sequelize.define('User', {
   url_img: {
     type: DataTypes.STRING,
     allowNull: true
-  },
+  }
 }, {
   tableName: 'users',
-  timestamps: true
+  timestamps: false
 });
 
 User.belongsToMany(Rate, { through: Rate, foreignKey: 'user_id' });
