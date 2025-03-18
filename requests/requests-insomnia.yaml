@@ -1,0 +1,353 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1697349039748
+  modified: 1697349039748
+collection:
+  - name: MSR
+    meta:
+      id: fld_985358ba421a4d83bcc973e3a8948882
+      created: 1742326141252
+      modified: 1742326141252
+      sortKey: -1742326141253
+    children:
+      - name: User
+        meta:
+          id: fld_d1cc2fb7375740f19b7adf8f5a1f6875
+          created: 1742256781853
+          modified: 1742326153043
+          sortKey: -1742326152976
+        children:
+          - url: http://localhost:3001/users/
+            name: CreateUser
+            meta:
+              id: req_9fe9b36478d349a59d16b4a3bd27e2cf
+              created: 1741731082407
+              modified: 1742326810689
+              isPrivate: false
+              sortKey: -1742256791745
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"name": "Jhon Clive",
+                	"username": "j.clive"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/8.3.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3001/users/
+            name: GetUser
+            meta:
+              id: req_6c6ea7789b374b26a89c67b2f450ac22
+              created: 1742253889100
+              modified: 1742256791679
+              isPrivate: false
+              sortKey: -1742256791645
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/8.3.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3001/users/11
+            name: UpdateUser
+            meta:
+              id: req_4928335931e04d849e6e6deef90e49f0
+              created: 1742254783703
+              modified: 1742326844081
+              isPrivate: false
+              sortKey: -1742256791945
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"name": "Jhon Clive",
+                	"username": "jo.clive"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/8.3.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3001/users/7
+            name: DeleteUser
+            meta:
+              id: req_21b5f5f124694cf5972a360755a93b8d
+              created: 1742256059105
+              modified: 1742256804358
+              isPrivate: false
+              sortKey: -1742256791845
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/8.3.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Title
+        meta:
+          id: fld_e7a5ae56b55945b2a6c51cf7385cefdb
+          created: 1742256821344
+          modified: 1742326163748
+          sortKey: -1742326153176
+        children:
+          - url: http://localhost:3001/titles/
+            name: CreateTitle
+            meta:
+              id: req_256cc62442024801959f928977c215d1
+              created: 1742256821345
+              modified: 1742263603025
+              isPrivate: false
+              sortKey: -1742256791745
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"title": "Avangers",
+                  "director": "Anthony Russo",
+                  "year": "2012",
+                  "duration": "2h23m",
+                  "type": "Action"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/8.3.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3001/titles/1
+            name: getTitle
+            meta:
+              id: req_cf88e14f9f6f4ee08c118d215775576d
+              created: 1742256821347
+              modified: 1742263698293
+              isPrivate: false
+              sortKey: -1742256791645
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/8.3.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3001/titles/1
+            name: UpdateTitle
+            meta:
+              id: req_095a776a503b4ea9876addd21979af27
+              created: 1742256821349
+              modified: 1742326910089
+              isPrivate: false
+              sortKey: -1742256791945
+            method: PUT
+            body:
+              mimeType: application/json
+              text: >-
+                {
+                	"title": "Avangers",
+                  "director": "Anthony Russo",
+                  "year": "2012",
+                  "duration": "2h23m",
+                  "type": "Action",
+                	"img_url": "https://upload.wikimedia.org/wikipedia/pt/2/22/OsVingadores2.jpg"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/8.3.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3001/titles/3
+            name: DeleteTitle
+            meta:
+              id: req_c9f2ec682de44497b21f4bd4944e87d0
+              created: 1742256821350
+              modified: 1742258655733
+              isPrivate: false
+              sortKey: -1742256791845
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/8.3.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Rate
+        meta:
+          id: fld_e2d0019e1c1d4399a7d75c44fb9eda62
+          created: 1742259333036
+          modified: 1742326157345
+          sortKey: -1742326153076
+        children:
+          - url: http://localhost:3001/rates/
+            name: CreateRate
+            meta:
+              id: req_91768f2a7bd84f30b7fd070be5b88c24
+              created: 1742259333037
+              modified: 1742326864553
+              isPrivate: false
+              sortKey: -1742256791745
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "title_id": "2",
+                  "user_id": "1",
+                  "value": "5",
+                  "comment": "Best Movie Ever!"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/8.3.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3001/rates/
+            name: GetRate
+            meta:
+              id: req_78df427f0be94c57bdacc28566950f7f
+              created: 1742259333039
+              modified: 1742263573160
+              isPrivate: false
+              sortKey: -1742256791645
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/8.3.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3001/rates/1
+            name: UpdateRate
+            meta:
+              id: req_44cdfae4563e49239c8bd85a5b27c4b7
+              created: 1742259333040
+              modified: 1742263518122
+              isPrivate: false
+              sortKey: -1742256791945
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "title_id": "1",
+                  "user_id": "1",
+                  "value": "4",
+                  "comment": "The best movie I've ever seen!"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/8.3.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3001/rates/1
+            name: DeleteRate
+            meta:
+              id: req_0903c29ed1064869bd1fef23c2a303f2
+              created: 1742259333041
+              modified: 1742263567226
+              isPrivate: false
+              sortKey: -1742256791845
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/8.3.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1741731063052
+    modified: 1741731063052
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1741731063051
+    modified: 1741731063051
+    isPrivate: false

@@ -1,0 +1,238 @@
+{
+  "info": {
+    "name": "Scratch Pad",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "MSR",
+      "item": [
+        {
+          "name": "User",
+          "item": [
+            {
+              "name": "CreateUser",
+              "request": {
+                "method": "POST",
+                "header": [
+                  { "key": "Content-Type", "value": "application/json" },
+                  { "key": "User-Agent", "value": "insomnia/8.3.0" }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\"name\": \"Jhon Clive\", \"username\": \"j.clive\"}"
+                },
+                "url": {
+                  "raw": "http://localhost:3001/users/",
+                  "host": ["localhost"],
+                  "port": "3001",
+                  "path": ["users"]
+                }
+              }
+            },
+            {
+              "name": "GetUser",
+              "request": {
+                "method": "GET",
+                "header": [
+                  { "key": "User-Agent", "value": "insomnia/8.3.0" }
+                ],
+                "url": {
+                  "raw": "http://localhost:3001/users/",
+                  "host": ["localhost"],
+                  "port": "3001",
+                  "path": ["users"]
+                }
+              }
+            },
+            {
+              "name": "UpdateUser",
+              "request": {
+                "method": "PUT",
+                "header": [
+                  { "key": "Content-Type", "value": "application/json" },
+                  { "key": "User-Agent", "value": "insomnia/8.3.0" }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\"name\": \"Jhon Clive\", \"username\": \"jo.clive\"}"
+                },
+                "url": {
+                  "raw": "http://localhost:3001/users/11",
+                  "host": ["localhost"],
+                  "port": "3001",
+                  "path": ["users", "11"]
+                }
+              }
+            },
+            {
+              "name": "DeleteUser",
+              "request": {
+                "method": "DELETE",
+                "header": [
+                  { "key": "User-Agent", "value": "insomnia/8.3.0" }
+                ],
+                "url": {
+                  "raw": "http://localhost:3001/users/7",
+                  "host": ["localhost"],
+                  "port": "3001",
+                  "path": ["users", "7"]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "Title",
+          "item": [
+            {
+              "name": "CreateTitle",
+              "request": {
+                "method": "POST",
+                "header": [
+                  { "key": "Content-Type", "value": "application/json" },
+                  { "key": "User-Agent", "value": "insomnia/8.3.0" }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\"title\": \"Avangers\", \"director\": \"Anthony Russo\", \"year\": \"2012\", \"duration\": \"2h23m\", \"type\": \"Action\"}"
+                },
+                "url": {
+                  "raw": "http://localhost:3001/titles/",
+                  "host": ["localhost"],
+                  "port": "3001",
+                  "path": ["titles"]
+                }
+              }
+            },
+            {
+              "name": "getTitle",
+              "request": {
+                "method": "GET",
+                "header": [
+                  { "key": "User-Agent", "value": "insomnia/8.3.0" }
+                ],
+                "url": {
+                  "raw": "http://localhost:3001/titles/1",
+                  "host": ["localhost"],
+                  "port": "3001",
+                  "path": ["titles", "1"]
+                }
+              }
+            },
+            {
+              "name": "UpdateTitle",
+              "request": {
+                "method": "PUT",
+                "header": [
+                  { "key": "Content-Type", "value": "application/json" },
+                  { "key": "User-Agent", "value": "insomnia/8.3.0" }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\"title\": \"Avangers\", \"director\": \"Anthony Russo\", \"year\": \"2012\", \"duration\": \"2h23m\", \"type\": \"Action\", \"img_url\": \"https://upload.wikimedia.org/wikipedia/pt/2/22/OsVingadores2.jpg\"}"
+                },
+                "url": {
+                  "raw": "http://localhost:3001/titles/1",
+                  "host": ["localhost"],
+                  "port": "3001",
+                  "path": ["titles", "1"]
+                }
+              }
+            },
+            {
+              "name": "DeleteTitle",
+              "request": {
+                "method": "DELETE",
+                "header": [
+                  { "key": "User-Agent", "value": "insomnia/8.3.0" }
+                ],
+                "url": {
+                  "raw": "http://localhost:3001/titles/3",
+                  "host": ["localhost"],
+                  "port": "3001",
+                  "path": ["titles", "3"]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "Rate",
+          "item": [
+            {
+              "name": "CreateRate",
+              "request": {
+                "method": "POST",
+                "header": [
+                  { "key": "Content-Type", "value": "application/json" },
+                  { "key": "User-Agent", "value": "insomnia/8.3.0" }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\"title_id\": \"2\", \"user_id\": \"1\", \"value\": \"5\", \"comment\": \"Best Movie Ever!\"}"
+                },
+                "url": {
+                  "raw": "http://localhost:3001/rates/",
+                  "host": ["localhost"],
+                  "port": "3001",
+                  "path": ["rates"]
+                }
+              }
+            },
+            {
+              "name": "GetRate",
+              "request": {
+                "method": "GET",
+                "header": [
+                  { "key": "User-Agent", "value": "insomnia/8.3.0" }
+                ],
+                "url": {
+                  "raw": "http://localhost:3001/rates/",
+                  "host": ["localhost"],
+                  "port": "3001",
+                  "path": ["rates"]
+                }
+              }
+            },
+            {
+              "name": "UpdateRate",
+              "request": {
+                "method": "PUT",
+                "header": [
+                  { "key": "Content-Type", "value": "application/json" },
+                  { "key": "User-Agent", "value": "insomnia/8.3.0" }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\"title_id\": \"1\", \"user_id\": \"1\", \"value\": \"4\", \"comment\": \"The best movie I've ever seen!\"}"
+                },
+                "url": {
+                  "raw": "http://localhost:3001/rates/1",
+                  "host": ["localhost"],
+                  "port": "3001",
+                  "path": ["rates", "1"]
+                }
+              }
+            },
+            {
+              "name": "DeleteRate",
+              "request": {
+                "method": "DELETE",
+                "header": [
+                  { "key": "User-Agent", "value": "insomnia/8.3.0" }
+                ],
+                "url": {
+                  "raw": "http://localhost:3001/rates/1",
+                  "host": ["localhost"],
+                  "port": "3001",
+                  "path": ["rates", "1"]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

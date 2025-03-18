@@ -26,6 +26,7 @@ npm --prefix ./api run init:db
 ```bash
 npm --prefix ./api run start
 ```
+7. You can import the request in insomnia or post in the folder requests you will find the files.
 
 
 
