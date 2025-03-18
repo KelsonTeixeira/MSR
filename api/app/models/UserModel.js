@@ -1,6 +1,5 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../database/connection');
-const Rate = require('./RateModel');
 
 const User = sequelize.define('User', {
   id: {
@@ -24,7 +23,5 @@ const User = sequelize.define('User', {
   tableName: 'users',
   timestamps: false
 });
-
-User.belongsToMany(Rate, { through: Rate, foreignKey: 'user_id' });
 
 module.exports = User;
