@@ -30,11 +30,11 @@ const Title = sequelize.define('User', {
   },
   img_url: {
     type: DataTypes.STRING,
-    allowNull: false
+    allowNull: true
   }
 }, {
   tableName: 'titles',
-  timestamps: true
+  timestamps: false
 });
 
 Title.belongsToMany(Rate, { through: Rate, foreignKey: 'title_id' });

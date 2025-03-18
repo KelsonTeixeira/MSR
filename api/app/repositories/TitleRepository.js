@@ -1,7 +1,8 @@
 const Title = require("../models/TitleModel");
 
-module.exports = () => ({
+const titleRepository = {
   create: async (data) => {
+    console.log(data)
     return Title.create(data);
   },
 
@@ -20,4 +21,6 @@ module.exports = () => ({
   delete: async (titleID) => {
     return Title.destroy({ where: { id: titleID } });
   }
-});
+};
+
+module.exports = titleRepository;
