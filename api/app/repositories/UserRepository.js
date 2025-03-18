@@ -1,7 +1,8 @@
 const User = require("../models/UserModel");
 
-module.exports = () => ({
+const userRepository = {
   create: async (data) => {
+    console.log(data);
     return User.create(data);
   },
 
@@ -20,4 +21,6 @@ module.exports = () => ({
   delete: async (userID) => {
     return User.destroy({ where: { id: userID } });
   }
-});
+};
+
+module.exports = userRepository;
