@@ -2,10 +2,10 @@ require('dotenv').config();
 
 const sequelize = require("sequelize");
 
-const connection = new sequelize(process.env.DATABASE, process.env.USER, process.env.PASSWORD, {
+const connection = new sequelize('msr_db', 'admin', 'post_password', {
     host: process.env.HOST,
     dialect: 'postgres',
-    timezone: process.env.TIMEZONE,
+    timezone: '-03:00',
     schema: process.env.SCHEMA,
     dialectOptions: {
         multipleStatements: true
