@@ -4,4 +4,4 @@ CREATE TABLE msr.users (
   name VARCHAR NOT NULL,
   username VARCHAR NOT NULL,
   url_img VARCHAR
-)
+);
