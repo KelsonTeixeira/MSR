@@ -5,6 +5,6 @@ CREATE TABLE msr.Rates (
   user_id INT NOT NULL,
   value INT NOT NULL,
   comment TEXT NOT NULL,
-  FOREIGN KEY (title_id) REFERENCES Titles(id) ON DELETE CASCADE,
-  FOREIGN KEY (user_id) REFERENCES Users(id) ON DELETE CASCADE
-)
+  FOREIGN KEY (title_id) REFERENCES msr.titles(id) ON DELETE CASCADE,
+  FOREIGN KEY (user_id) REFERENCES msr.users(id) ON DELETE CASCADE
+);

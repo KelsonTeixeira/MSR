@@ -1,7 +1,8 @@
 const Rate = require("../models/RateModel");
 
-module.exports = () => ({
+const rateRepository = {
   create: async (data) => {
+    console.log(data)
     return Rate.create(data);
   },
 
@@ -13,9 +14,9 @@ module.exports = () => ({
     return Rate.findAll();
   },
 
-  findByUserID: async (userID) => {
+  findByRateID: async (rateID) => {
     return Rate.findAll({
-      where: { user_id: userID },
+      where: { rate_id: rateID },
     });
   },
 
@@ -31,5 +32,7 @@ module.exports = () => ({
 
   delete: async (rateID) => {
     return Rate.destroy({ where: { id: rateID } });
-  }
-});
+  },
+};
+
+module.exports = rateRepository;
